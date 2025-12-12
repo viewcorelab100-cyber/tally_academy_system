@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>50% 편해지는 학원 관리 자동화 설문</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            width: 100%;
+            height: 100%;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #ffffff;
+            min-height: 100vh;
+        }
+
+        .title {
+            text-align: center;
+            font-size: 2rem;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin-bottom: 24px;
+            padding-top: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .title {
+                font-size: 1.5rem;
+                padding: 15px 10px;
+            }
+        }
+
+        .container {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            min-height: 100vh;
+        }
+
+        .form-wrapper {
+            background: #ffffff;
+            border-radius: 16px;
+            overflow: hidden;
+            padding: 20px;
+        }
+
+        iframe {
+            display: block;
+            border: none;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+
+            .form-wrapper {
+                border-radius: 12px;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">50% 편해지는 학원 관리 자동화 설문</h1>
+        <div class="form-wrapper">
+            <iframe 
+                data-tally-src="https://tally.so/embed/jaZp9Y?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" 
+                loading="lazy" 
+                width="100%" 
+                height="1478" 
+                frameborder="0" 
+                marginheight="0" 
+                marginwidth="0" 
+                title="50% 편해지는 학원 관리 자동화 설문">
+            </iframe>
+        </div>
+    </div>
+
+    <script>
+        var d = document,
+            w = "https://tally.so/widgets/embed.js",
+            v = function() {
+                "undefined" != typeof Tally ? Tally.loadEmbeds() : d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e) {
+                    e.src = e.dataset.tallySrc
+                }))
+            };
+        if ("undefined" != typeof Tally) v();
+        else if (d.querySelector('script[src="' + w + '"]') == null) {
+            var s = d.createElement("script");
+            s.src = w, s.onload = v, s.onerror = v, d.body.appendChild(s);
+        }
+    </script>
+</body>
+</html>
+
